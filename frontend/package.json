@@ -1,0 +1,37 @@
+{
+  "name": "haimayun",
+  "version": "1.0.0",
+  "description": "海马云，海马云官网",
+  "author": "lzk",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "dev-dev": "cross-env HAIMA_ENV=dev nuxt",
+    "build-dev": "cross-env HAIMA_ENV=dev nuxt build",
+    "start-dev": "cross-env HAIMA_ENV=dev nuxt start",
+    "build-testing": "cross-env HAIMA_ENV=testing nuxt build",
+    "start-testing": "cross-env HAIMA_ENV=testing nuxt start",
+    "build-pre": "cross-env HAIMA_ENV=pre nuxt build",
+    "start-pre": "cross-env HAIMA_ENV=pre nuxt start",
+    "build": "cross-env HAIMA_ENV=rel nuxt build",
+    "start": "cross-env HAIMA_ENV=rel nuxt start",
+    "generate": "nuxt generate"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": 3000
+    }
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "element-ui": "^2.2.1",
+    "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
+    "nuxt": "^1.0.0",
+    "swiper": "^4.3.3"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1"
+  }
+}
