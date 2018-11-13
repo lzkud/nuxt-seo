@@ -1,12 +1,12 @@
 {
     apps : [
         {
-            name      : "haimayun",
+            name      : "mayapp",
             max_memory_restart: "300M",
-            cwd       : "/data/service/dataapp/haimacloud_web/",
+            cwd       : "/data/service/dataapp/myapp_web/",
             script    : "./run.sh",
-            out_file : "/data/log/haimacloud_web/out.log",
-            error_file : "/data/log/haimacloud_web/error.log",
+            out_file : "/data/log/myapp_web/out.log",
+            error_file : "/data/log/myapp_web/error.log",
             instances  : 1,
             exec_mode  : "fork",
             env: {

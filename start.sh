@@ -2,8 +2,8 @@
 echo $NODE_ENV
 cd frontend
 
-pm2 stop haimayun
-pm2 delete haimayun
+pm2 stop myapp
+pm2 delete myapp
 
 if [ "$NODE_ENV" == "testing"  ]; then
     echo "npm run build-testing"
@@ -22,5 +22,5 @@ else
     npm run build
 fi
 
-pm2 start ../haimayun.json
+pm2 start ../myapp.json
 

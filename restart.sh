@@ -2,7 +2,7 @@
 echo $NODE_ENV
 cd frontend
 
-##pm2 stop haimayun
+##pm2 stop myapp
 
 
 if [ "$NODE_ENV" == "testing" ]; then
@@ -22,5 +22,5 @@ else
     npm run build
 fi
 
-pm2 restart haimayun
+pm2 restart myapp
 
