@@ -1,37 +1,23 @@
 {
-  "name": "haimayun",
+  "name": "nuxt-seo",
   "version": "1.0.0",
-  "description": "海马云，海马云官网",
-  "author": "lzk",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "nuxt",
-    "dev-dev": "cross-env HAIMA_ENV=dev nuxt",
-    "build-dev": "cross-env HAIMA_ENV=dev nuxt build",
-    "start-dev": "cross-env HAIMA_ENV=dev nuxt start",
-    "build-testing": "cross-env HAIMA_ENV=testing nuxt build",
-    "start-testing": "cross-env HAIMA_ENV=testing nuxt start",
-    "build-pre": "cross-env HAIMA_ENV=pre nuxt build",
-    "start-pre": "cross-env HAIMA_ENV=pre nuxt start",
-    "build": "cross-env HAIMA_ENV=rel nuxt build",
-    "start": "cross-env HAIMA_ENV=rel nuxt start",
-    "generate": "nuxt generate"
-  },
-  "config": {
-    "nuxt": {
-      "host": "0.0.0.0",
-      "port": 3000
-    }
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.0.0",
-    "element-ui": "^2.2.1",
-    "jquery": "^3.3.1",
-    "js-cookie": "^2.2.0",
-    "nuxt": "^1.0.0",
-    "swiper": "^4.3.3"
+    "nuxt": "^3.15.0",
+    "vue": "^3.5.0",
+    "@pinia/nuxt": "^0.5.0",
+    "pinia": "^2.2.0",
+    "axios": "^1.7.0"
   },
   "devDependencies": {
-    "cross-env": "^5.0.1"
+    "@nuxt/devtools": "latest"
   }
 }

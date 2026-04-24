@@ -1,29 +1,25 @@
 <template>
-  <div>
-    <MyHeader></MyHeader>
-    <nuxt/>
-    <MyFooter></MyFooter>
+  <div class="layout">
+    <CommonHeader />
+    <main class="main-content">
+      <slot />
+    </main>
+    <CommonFooter />
   </div>
 </template>
-<script>
-  import MyHeader from '~/components/common/myHeader.vue'
-  import MyFooter from '~/components/common/myFooter.vue'
 
-  export default {
-    data(){
-      return {
-
-      }
-    },
-    mounted(){
-
-    },
-    components:{
-      MyHeader,
-      MyFooter,
-    }
-  }
-
+<script setup>
 </script>
-<style>
+
+<style scoped>
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px 0;
+}
 </style>
